@@ -402,8 +402,8 @@ importers:
         specifier: catalog:dev
         version: 19.3.0(react@19.3.0)
       zyzz:
-        specifier: https://pkg.pr.new/zyzz@410740f
-        version: https://pkg.pr.new/zyzz@410740f(@babel/core@7.29.7)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.2.8)(vite@8.3.0(esbuild@0.28.2)(jiti@1.21.7)(tsx@4.23.13)(yaml@2.9.1))
+        specifier: https://pkg.pr.new/zyzz@e0a7b1f
+        version: https://pkg.pr.new/zyzz@e0a7b1f(@babel/core@7.29.7)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.2.8)(vite@8.3.0(esbuild@0.28.2)(jiti@1.21.7)(tsx@4.23.13)(yaml@2.9.1))
 
 packages:
 
@@ -3799,8 +3799,8 @@ packages:
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  zyzz@https://pkg.pr.new/zyzz@410740f:
-    resolution: {integrity: sha512-SgPTpcyboT6jgU3J6De5TmBeBv0ZUgfCcWSeAfaeZRrG6HE56jj0/Ii68FQv8F+lARRLyAx/Y2VmuuHko+/jZQ==, tarball: https://pkg.pr.new/zyzz@410740f}
+  zyzz@https://pkg.pr.new/zyzz@e0a7b1f:
+    resolution: {integrity: sha512-5qC53HKxJH/ouFVgX1R6hX6JY1h7g83LyRkOMzWjld/7TXOMtFR5HkgYYfe4fZ7HluqQLInlUSpGqANkJ/MpfA==, tarball: https://pkg.pr.new/zyzz@e0a7b1f}
     version: 0.0.40
     hasBin: true
     peerDependencies:
@@ -4519,25 +4519,25 @@ snapshots:
     dependencies:
       zod: 4.6.7
 
-  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)':
+  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@2.0.0-alpha.6)(@emnapi/runtime@2.0.0-alpha.6)':
+    dependencies:
+      '@emnapi/core': 2.0.0-alpha.6
+      '@emnapi/runtime': 2.0.0-alpha.6
+      '@tybys/wasm-util': 0.10.4
+
+  '@napi-rs/wasm-runtime@1.2.5(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)':
     dependencies:
       '@emnapi/core': 1.11.2
       '@emnapi/runtime': 1.11.2
       '@tybys/wasm-util': 0.10.4
     optional: true
 
-  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
+  '@napi-rs/wasm-runtime@1.2.5(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:
       '@emnapi/core': 1.11.3
       '@emnapi/runtime': 1.11.3
       '@tybys/wasm-util': 0.10.4
     optional: true
-
-  '@napi-rs/wasm-runtime@1.2.4(@emnapi/core@2.0.0-alpha.6)(@emnapi/runtime@2.0.0-alpha.6)':
-    dependencies:
-      '@emnapi/core': 2.0.0-alpha.6
-      '@emnapi/runtime': 2.0.0-alpha.6
-      '@tybys/wasm-util': 0.10.4
 
   '@napi-rs/wasm-runtime@1.2.5(@emnapi/core@2.0.0-alpha.6)(@emnapi/runtime@2.0.0-alpha.6)':
     dependencies:
@@ -4670,7 +4670,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.2
       '@emnapi/runtime': 1.11.2
-      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
+      '@napi-rs/wasm-runtime': 1.2.5(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
     optional: true
 
   '@oxc-resolver/binding-win32-arm64-msvc@11.24.2':
@@ -5155,7 +5155,7 @@ snapshots:
     dependencies:
       '@emnapi/core': 1.11.3
       '@emnapi/runtime': 1.11.3
-      '@napi-rs/wasm-runtime': 1.2.4(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
+      '@napi-rs/wasm-runtime': 1.2.5(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
     optional: true
 
   '@solidjs/compiler-win32-x64-msvc@2.0.0-rc.11':
@@ -6918,7 +6918,7 @@ snapshots:
 
   zwitch@2.0.4: {}
 
-  zyzz@https://pkg.pr.new/zyzz@410740f(@babel/core@7.29.7)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.2.8)(vite@8.3.0(esbuild@0.28.2)(jiti@1.21.7)(tsx@4.23.13)(yaml@2.9.1)):
+  zyzz@https://pkg.pr.new/zyzz@e0a7b1f(@babel/core@7.29.7)(esbuild@0.28.2)(react@19.3.0)(rolldown@1.2.8)(vite@8.3.0(esbuild@0.28.2)(jiti@1.21.7)(tsx@4.23.13)(yaml@2.9.1)):
     dependencies:
       '@emnapi/core': 2.0.0-alpha.6
       '@emnapi/runtime': 2.0.0-alpha.6

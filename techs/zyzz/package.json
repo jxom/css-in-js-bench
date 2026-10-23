@@ -12,6 +12,6 @@
   "dependencies": {
     "react": "catalog:dev",
     "react-dom": "catalog:dev",
-    "zyzz": "https://pkg.pr.new/zyzz@410740f"
+    "zyzz": "https://pkg.pr.new/zyzz@e0a7b1f"
   }
 }
