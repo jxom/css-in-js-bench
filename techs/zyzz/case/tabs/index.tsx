@@ -1,11 +1,10 @@
 import React, { type FunctionComponent, type KeyboardEvent, type ReactNode } from "react";
 import { style } from "../../zyzz.config";
 
-// The same real-project Tabs in Zyzz. Like the StyleX and Plumeria lanes, this renders the
-// per-tab ::after underline fallback and drops the @supports anchor-positioning underline.
-// The active and disabled states read the attributes the button already exposes
-// (aria-selected, :disabled), so a tab applies one style. FullWidthTabs marks its list with
-// an empty style, and the item and tab rules select on that ancestor.
+// The same real-project Tabs in Zyzz, including the CSS anchor-positioning underline under
+// @supports. The active and disabled states read the attributes the button already
+// exposes (aria-selected, :disabled), so a tab applies one style. FullWidthTabs marks its
+// list with an empty style, and the item and tab rules select on that ancestor.
 interface ITabProps {
   isActive?: boolean;
   disabled?: boolean;
@@ -115,6 +114,19 @@ namespace styles {
     listStyle: "none",
     scrollbarWidth: "none",
     "::-webkit-scrollbar": { display: "none" },
+    "@supports (anchor-name: --test)": {
+      "::before": {
+        content: '""',
+        position: "absolute",
+        bottom: 0,
+        positionAnchor: "--active-tab",
+        left: "anchor(left)",
+        right: "anchor(right)",
+        height: "3px",
+        backgroundColor: "#eeb524",
+        transition: "left 150ms ease-out, right 150ms ease-out",
+      },
+    },
   });
 
   // Marks a full-width list; the item and tab rules below select on it.
@@ -172,6 +184,12 @@ namespace styles {
       '&:not([aria-selected="true"]):hover:not(:disabled)::after': { borderBottomColor: "#ddd" },
       '&:not([aria-selected="true"]):disabled': { color: "rgba(0, 0, 0, 0.26)", cursor: "default" },
       [`${listFull} &`]: { flex: 1 },
+    },
+    "@supports (anchor-name: --test)": {
+      selectors: {
+        '&[aria-selected="true"]': { anchorName: "--active-tab" },
+        '&[aria-selected="true"]::after': { borderBottomColor: "#ddd", opacity: 0 },
+      },
     },
     ":focus-visible": {
       outline: "none",
