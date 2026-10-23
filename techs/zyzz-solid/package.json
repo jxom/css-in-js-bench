@@ -1,0 +1,21 @@
+{
+  "name": "zyzz-solid",
+  "description": "Zyzz (grouped output, Solid 2)",
+  "private": true,
+  "type": "module",
+  "bench": {
+    "color": "#0369a1",
+    "buildPlugin": "zyzz",
+    "appStylesheet": null,
+    "cssKind": "extracted",
+    "framework": "solid"
+  },
+  "dependencies": {
+    "@solidjs/web": "2.0.0-rc.17",
+    "solid-js": "2.0.0-rc.17",
+    "zyzz": "https://pkg.pr.new/zyzz@410740f"
+  },
+  "devDependencies": {
+    "@solidjs/vite-plugin": "3.0.0-next.46"
+  }
+}

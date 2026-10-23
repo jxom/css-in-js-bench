@@ -120,6 +120,7 @@ const COMPONENT_PACKAGES = new Set([
   "next-yak", "next-yak-nofold", "next-yak-css", "next-yak-css-nofold", // lib is @yak/react
   "yak-solid", "yak-solid-nofold", // lib is @yak/solid (no npm package named yak-solid)
   "cn-solid", // lib is cn (no npm package named cn-solid)
+  "zyzz-solid", // lib is zyzz (no npm package named zyzz-solid)
   "vanilla", "vanilla-solid", // no styling library
 ]);
 function bucketForPackage(pkg: string): "react" | "lib" | "component" | "other" {

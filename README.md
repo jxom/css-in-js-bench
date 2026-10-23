@@ -201,6 +201,11 @@ compiler with a Solid 2 runtime — over the same 14 workloads, styled API only.
 names, no styling library, the way `vanilla` is the floor for the React lanes. It's hidden
 by default in the lane filter.
 
+`zyzz-solid` runs the same Zyzz cases as `zyzz` on Solid 2, with the config zyzz
+documents for Solid: `defineConfig({ cssOutput: "grouped", output: "html" })`, so an
+application returns `class` and a serialized `style` string instead of `className` and a
+style object, and cases spread it onto the element as in the React lane.
+
 Three things follow from Solid not being React, and they are worth knowing before reading
 a chart that mixes them:
 
@@ -279,7 +284,7 @@ Each lane's `ssr-entry.tsx` collects CSS the way that family does in production:
 | author | vanilla, vanilla-solid | the co-located `styles.css`, read `?raw` |
 | runtime | styled-components, Emotion, Goober | the lib's SSR critical-CSS API at render time |
 | build-extracted | next-yak (×4: styled + css-prop, folding on and off), @yak/solid | the yak sheet emitted via `ssrEmitAssets`, read back |
-| build-extracted | Zyzz (grouped output) | the zyzz sheet emitted via `ssrEmitAssets`, sliced to the classes used |
+| build-extracted | Zyzz (grouped output; React and Solid) | the zyzz sheet emitted via `ssrEmitAssets`, sliced to the classes used |
 | build-atomic | StyleX | the stylex plugin's emitted sheet |
 | atomic-prebuilt | Panda (css fn / style props) | a `panda cssgen` sheet, sliced to the classes used |
 | utility | cn, tailwind-merge | real Tailwind JIT over the rendered HTML |

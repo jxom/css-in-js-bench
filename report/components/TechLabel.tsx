@@ -50,6 +50,7 @@ export const TECH_ALIASES: Record<string, string> = {
   "plumeria-solid": "plumeria-solid",
   zyzz: "zyzz",
   Zyzz: "zyzz",
+  "zyzz-solid": "zyzz-solid",
 };
 
 // A technology's logo (when one is mapped) followed by its label text. The <img> is decorative
