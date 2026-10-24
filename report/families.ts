@@ -81,7 +81,7 @@ export const FAMILIES: Family[] = [
   },
   {
     group: "Zyzz",
-    items: [{ tech: "zyzz", short: "grouped" }],
+    items: [{ tech: "zyzz", short: "Zyzz" }],
   },
   {
     group: "Runtime CSS-in-JS",

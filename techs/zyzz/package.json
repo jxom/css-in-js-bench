@@ -1,6 +1,6 @@
 {
   "name": "zyzz",
-  "description": "Zyzz (grouped output)",
+  "description": "Zyzz",
   "private": true,
   "type": "module",
   "bench": {
